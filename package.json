@@ -1,0 +1,16 @@
+{
+  "name": "vanilla-news",
+  "version": "1.0.0",
+  "description": "practice dev tools",
+  "main": "index.js",
+  "scripts": {
+    "my-script": "node script/myScript.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-leenawon:leenawon/news-board.git"
+  },
+  "author": "leenawon",
+  "license": "ISC"
+}
