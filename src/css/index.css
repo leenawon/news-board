@@ -1,0 +1,157 @@
+/* Header */
+.header {
+  padding: var(--size-50);
+  text-align: center;
+  color: var(--gray);
+}
+
+.header .title {
+  font-style: italic;
+  font-weight: bold;
+  font-size: var(--size-30);
+}
+
+.header .sub-title {
+  font-size: var(--size-20);
+  font-weight: bold;
+  margin-top: var(--size-20);
+}
+
+/* Posts */
+.posts {
+  display: flex;
+  max-width: 1280px;
+  padding: var(--size-50);
+  margin: auto;
+}
+
+.posts .top-posts {
+  flex-basis: 75%;
+  padding: var(--size-16);
+}
+
+.posts .aside {
+  flex-basis: 25%;
+  margin: var(--size-16);
+  padding: var(--size-20);
+  border-left: 1px solid var(--gray);
+}
+
+/* Latest Post List */
+.latest-posts .latest-posts-list {
+  margin-top: var(--size-16);
+}
+
+.latest-posts .latest-posts-item {
+  padding: var(--size-16) 0;
+  border-bottom: 1px dotted var(--yellow);
+}
+
+.latest-posts .latest-posts-item:hover {
+  color: var(--dark-yellow);
+}
+
+/* Single Post */
+.single-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--yellow);
+  min-height: 200px;
+  padding: var(--size-20);
+}
+
+.post-info .title {
+  font-size: var(--size-20);
+}
+.post-info .title:hover {
+  color: var(--dark-yellow);
+}
+
+.post-info .description {
+  margin: var(--size-16) var(--size-16) 0 0;
+  font-size: var(--size-16);
+}
+
+.thumbnail-container {
+  max-width: 140px;
+}
+
+.thumbnail-container .thumbnail-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: calc(var(--size-16) - 6px);
+}
+
+/* Support */
+.support-section {
+  margin-top: var(--size-20);
+}
+
+.github-support {
+  margin-top: var(--size-16);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding-bottom: var(--size-30);
+}
+
+/* Spinner */
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.spinner img {
+  width: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .posts {
+    flex-direction: column;
+  }
+
+  .posts .aside {
+    margin: 0;
+    border-left: none;
+  }
+
+  .thumbnail-container {
+    display: none;
+  }
+
+  .footer {
+    padding-top: var(--size-30);
+    border-top: 1px solid var(--yellow);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    padding-bottom: var(--size-20);
+  }
+
+  .header .title {
+    font-size: var(--size-20);
+  }
+
+  .header .sub-title {
+    font-size: var(--size-16);
+  }
+
+  .single-post {
+    min-height: 150px;
+  }
+
+  .post-info .title {
+    font-size: var(--size-16);
+  }
+
+  .post-info .description {
+    font-size: 13px;
+  }
+}
