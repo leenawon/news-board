@@ -37,4 +37,9 @@ module.exports = {
       // new CssMinimizerPlugin(),
     ],
   },
+  devServer: {
+    port: 8000,
+    open: true,
+  },
+  devtool: "eval-source-map",
 };
