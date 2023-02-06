@@ -4,9 +4,11 @@
   "description": "practice dev tools",
   "main": "index.js",
   "scripts": {
+    "my-script": "node script/myScript.js",
     "webpack": "webpack",
     "webpack:serve": "webpack serve",
-    "my-script": "node script/myScript.js",
+    "build:dev": "webpack --config webpack.config.js --mode=development",
+    "build:prod": "webpack --config webpack.config.js --mode=production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
