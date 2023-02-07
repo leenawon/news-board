@@ -9,6 +9,7 @@
     "webpack:serve": "webpack serve",
     "build:dev": "webpack --config webpack.config.js --mode=development",
     "build:prod": "webpack --config webpack.config.js --mode=production",
+    "transpile": "babel src/javascript -d transpile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
