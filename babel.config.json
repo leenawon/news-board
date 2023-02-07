@@ -1,0 +1,13 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        // core-js 폴리필 사용을 위한 useBuiltIns, corejs 옵션 추가
+        "useBuiltIns": "usage", // 파일에 필요한 폴리필 자동 주입
+        "corejs": 3 // 패키지 버전
+      }
+    ]
+  ],
+  "plugins": ["@babel/plugin-proposal-class-properties"]
+}
