@@ -22,6 +22,25 @@ module.exports = {
         test: /\.(png|jpg|gif)$/i,
         use: ["file-loader"],
       },
+      {
+        test: /\.js$/,
+        include: [path.resolve(__dirname, "src/javascript")],
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: [
+              [
+                "@babel/preset-env",
+                {
+                  useBuiltIns: "usage",
+                  corejs: 3,
+                },
+              ],
+            ],
+          },
+        },
+      },
     ],
   },
   plugins: [
